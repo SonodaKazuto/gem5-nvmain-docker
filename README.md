@@ -38,6 +38,9 @@ docker build -t gem5-nvmain-hybrid . \
 ```sh
 docker pull ghcr.io/sonodakazuto/gem5-nvmain-hybrid:main
 ```
+```sh
+docker pull sonodakazuto/gem5-nvmain-hybrid:main
+```
 
 - **Important**
   
