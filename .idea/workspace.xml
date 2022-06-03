@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1730bc12-8695-4425-aa3e-9f2eedabfaba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/docker-publish.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/docker-publish.yml" afterDir="false" />
-    </list>
+    <list default="true" id="1730bc12-8695-4425-aa3e-9f2eedabfaba" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,6 +59,7 @@
       <workItem from="1654238864960" duration="877000" />
       <workItem from="1654239752930" duration="297000" />
       <workItem from="1654240090902" duration="779000" />
+      <workItem from="1654240892760" duration="158000" />
     </task>
     <servers />
   </component>
