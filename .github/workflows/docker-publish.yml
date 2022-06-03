@@ -82,7 +82,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            my-docker-hub-namespace/my-docker-hub-repository
+            sonodakazuto/gem5-nvmain-hybrid
             ghcr.io/${{ github.repository }}
 
       # Build and push Docker image with Buildx (don't push on PR)
