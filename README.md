@@ -20,10 +20,20 @@ integrate gem5 and nvmain into a docker image
 - [x] download and build gem5
 - [x] download and build nvmain
 - [x] hybrid build gem5 and NVmain
-- [ ] build workable docker image
+- [x] workable dockerfile
 - [ ] add L3 cache
+- [ ] github action release (some problem)
 
 ## Usage
+- Github action keep failing to publish image, so the image is not able to do docker pull temporarily.
+
+### build locally
+
+```sh
+docker build -t gem5-nvmain-docker . --no-cache
+```
+
+### Pull from remote
 
 ```sh
 docker pull ghcr.io/sonodakazuto/gem5-nvmain-docker:main
