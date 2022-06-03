@@ -82,8 +82,8 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            ghcr.io/${{ github.repository }}
-#            sonodakazuto/gem5-nvmain-hybrid
+            ghcr.io/gem5-nvmain-hybrid
+#           sonodakazuto/gem5-nvmain-hybrid
 
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
