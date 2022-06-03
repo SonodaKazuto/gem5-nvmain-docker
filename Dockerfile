@@ -43,3 +43,4 @@ RUN ./build/X86/gem5.opt configs/example/se.py -c tests/test-progs/hello/bin/x86
 # Copy start up script
 WORKDIR ..
 #ENTRYPOINT "sh /home/project/start-up.sh"
+CMD ['zsh']
