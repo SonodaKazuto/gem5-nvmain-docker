@@ -1,5 +1,7 @@
 # gem5 and NVmain Hybrid Simulator Docker Image
 
+[![Docker](https://github.com/SonodaKazuto/gem5-nvmain-docker/actions/workflows/docker-publish.yml/badge.svg?branch=main)](https://github.com/SonodaKazuto/gem5-nvmain-docker/actions/workflows/docker-publish.yml)
+
 **(status may show fail even if the image is published successfully)**
 
 integrate gem5 and nvmain into a docker image
@@ -33,7 +35,7 @@ docker build -t gem5-nvmain-docker . --no-cache
 ### Pull from remote
 
 ```sh
-docker pull ghcr.io/sonodakazuto/gem5-nvmain-docker:main
+docker pull ghcr.io/sonodakazuto/gem5-nvmain-hybrid:main
 ```
 
 - **Important**
