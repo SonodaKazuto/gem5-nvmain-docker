@@ -15,15 +15,14 @@ on:
   pull_request:
     branches: [ main ]
 
-env:
-  # Use docker.io for Docker Hub if empty
+env: # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
   IMAGE_NAME: sonodakazuto/gem5-nvmain-hybrid
 
 
 jobs:
-  build:
+  setup:
 
     runs-on: ubuntu-latest
     permissions:
@@ -41,10 +40,10 @@ jobs:
       - name: Cache Docker layers
         uses: actions/cache@v2
         with:
-            path: /tmp/.buildx-cache
-            key: ${{ runner.os }}-buildx-${{ github.sha }}
-            restore-keys: |
-              ${{ runner.os }}-buildx-
+          path: /tmp/.buildx-cache
+          key: ${{ runner.os }}-buildx-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-buildx-
 
       # Install the cosign tool except on PR
       # https://github.com/sigstore/cosign-installer
@@ -74,6 +73,17 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+  build:
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      # This is used to complete the identity challenge
+      # with sigstore/fulcio when running outside of PRs.
+      id-token: write
+
+    steps:
 
       # Extract metadata (tags, labels) for Docker
       # https://github.com/docker/metadata-action
@@ -92,11 +102,23 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          push: true
+          push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
+
+  publish:
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      # This is used to complete the identity challenge
+      # with sigstore/fulcio when running outside of PRs.
+      id-token: write
+
+    steps:
 
       # Sign the resulting Docker image digest except on PRs.
       # This will only write to the public Rekor transparency log when the Docker
@@ -107,6 +129,6 @@ jobs:
         if: ${{ github.event_name != 'pull_request' }}
         env:
           COSIGN_EXPERIMENTAL: "true"
-#         This step uses the identity token to provision an ephemeral certificate
-#         against the sigstore community Fulcio instance.
+        #         This step uses the identity token to provision an ephemeral certificate
+        #         against the sigstore community Fulcio instance.
         run: cosign sign ${{ steps.meta.outputs.tags }}@${{ steps.build-and-push.outputs.digest }}
