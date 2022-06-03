@@ -29,7 +29,8 @@ integrate gem5 and nvmain into a docker image
 ### build locally
 
 ```sh
-docker build -t gem5-nvmain-docker . --no-cache
+docker build -t gem5-nvmain-hybrid . \
+--no-cache // optional
 ```
 
 ### Pull from remote
