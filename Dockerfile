@@ -40,7 +40,12 @@ RUN ./build/X86/gem5.opt configs/example/se.py -c tests/test-progs/hello/bin/x86
     echo "show test result" && \
     cat /home/project/gem5/m5out/stats.txt
 
-# Copy start up script
+# enable l3 cache
+COPY /l3-cache/CacheConfing.py /home/project/gem5/configs/common
+COPY /l3-cache/Caches.py /home/project/gem5/configs/common
+COPY /l3-cache/Options.py /home/project/gem5/configs/common
+COPY /l3-cache/BaseCPU.py /home/project/gem5/src/cpu
+COPY /l3-cache/Xbar.py /home/project/gem5/src/mem
+
 WORKDIR ..
-#ENTRYPOINT "sh /home/project/start-up.sh"
 CMD ['zsh']
