@@ -41,7 +41,7 @@ RUN ./build/X86/gem5.opt configs/example/se.py -c tests/test-progs/hello/bin/x86
     cat /home/project/gem5/m5out/stats.txt
 
 # enable l3 cache
-COPY /add-l3-cache/CacheConfing.py /home/project/gem5/configs/common
+COPY /add-l3-cache/CacheConfig.py /home/project/gem5/configs/common
 COPY /add-l3-cache/Caches.py /home/project/gem5/configs/common
 COPY /add-l3-cache/Options.py /home/project/gem5/configs/common
 COPY /add-l3-cache/BaseCPU.py /home/project/gem5/src/cpu
