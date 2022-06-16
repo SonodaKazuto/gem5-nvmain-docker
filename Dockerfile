@@ -41,11 +41,11 @@ RUN ./build/X86/gem5.opt configs/example/se.py -c tests/test-progs/hello/bin/x86
     cat /home/project/gem5/m5out/stats.txt
 
 # enable l3 cache
-COPY /l3-cache/CacheConfing.py /home/project/gem5/configs/common
-COPY /l3-cache/Caches.py /home/project/gem5/configs/common
-COPY /l3-cache/Options.py /home/project/gem5/configs/common
-COPY /l3-cache/BaseCPU.py /home/project/gem5/src/cpu
-COPY /l3-cache/Xbar.py /home/project/gem5/src/mem
+COPY /add-l3-cache/CacheConfing.py /home/project/gem5/configs/common
+COPY /add-l3-cache/Caches.py /home/project/gem5/configs/common
+COPY /add-l3-cache/Options.py /home/project/gem5/configs/common
+COPY /add-l3-cache/BaseCPU.py /home/project/gem5/src/cpu
+COPY /add-l3-cache/Xbar.py /home/project/gem5/src/mem
 RUN scons EXTRAS=../NVmain build/X86/gem5.opt -j16 && \
     echo "gem5 and NVmain hybrid built (l3 cache)"
 RUN ./build/X86/gem5.opt configs/example/se.py -c tests/test-progs/hello/bin/x86/linux/hello \
