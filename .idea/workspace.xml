@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1730bc12-8695-4425-aa3e-9f2eedabfaba" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add-l3-cache/BaseCPU.py" beforeDir="false" afterPath="$PROJECT_DIR$/add-l3-cache/BaseCPU.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add-l3-cache/CacheConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/add-l3-cache/CacheConfig.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add-l3-cache/Caches.py" beforeDir="false" afterPath="$PROJECT_DIR$/add-l3-cache/Caches.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add-l3-cache/Options.py" beforeDir="false" afterPath="$PROJECT_DIR$/add-l3-cache/Options.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add-l3-cache/XBar.py" beforeDir="false" afterPath="$PROJECT_DIR$/add-l3-cache/XBar.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
