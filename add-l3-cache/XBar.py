@@ -148,6 +148,7 @@ class L2XBar(CoherentXBar):
     # to the first level of unified cache.
     point_of_unification = True
 
+
 class L3XBar(CoherentXBar):
     # 256-bit crossbar by default
     width = 32
