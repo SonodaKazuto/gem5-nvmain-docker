@@ -57,4 +57,3 @@ RUN gcc -o /home/project/gem5/quicksort /home/project/gem5/quicksort.c -O3
 COPY /scripts/2-way-test.sh /home/project/gem5
 COPY /scripts/full-way-test.sh /home/project/gem5
 WORKDIR ..
-#CMD [ 'zsh' ]
