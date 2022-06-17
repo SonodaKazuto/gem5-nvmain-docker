@@ -52,8 +52,8 @@ RUN ./build/X86/gem5.opt configs/example/se.py -c tests/test-progs/hello/bin/x86
     --cpu-type=TimingSimpleCPU --caches --l2cache --l3cache --mem-type=NVMainMemory \
     --nvmain-config=../NVmain/Config/PCM_ISSCC_2012_4GB.config && \
     echo "show l3 cache test result" && \
-    cat /home/project/gem5/m5out/stats.txt
+    cat /home/project/gem5/m5out/stats.txt \
 
 # startup command
 WORKDIR ..
-#CMD [ 'zsh' ]
+CMD [ 'zsh' ]
