@@ -55,4 +55,4 @@ RUN scons EXTRAS=../NVmain build/X86/gem5.opt -j16 && \
 #    cat /home/project/gem5/m5out/stats.txt
 
 WORKDIR ..
-CMD ['zsh']
+#CMD ['zsh']
