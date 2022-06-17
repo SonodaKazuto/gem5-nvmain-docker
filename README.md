@@ -22,7 +22,7 @@ integrate gem5 and nvmain into a docker image
 - [x] hybrid build gem5 and NVmain
 - [x] workable dockerfile
 - [x] add L3 cache (CMD failed in l3-cache version)
-- [ ] L3 cache add replacement policy
+- [x] L3 cache add replacement policy
 - [x] github action release
 
 ## Usage
