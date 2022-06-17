@@ -22,7 +22,8 @@ integrate gem5 and nvmain into a docker image
 - [x] hybrid build gem5 and NVmain
 - [x] workable dockerfile
 - [x] add L3 cache (CMD failed in l3-cache version)
-- [ ] L3 cache add replacement policy
+- [x] L3 cache add replacement policy
+- [x] L3 cache add write-back policy
 - [x] github action release
 
 ## Usage
@@ -37,7 +38,7 @@ docker build -t gem5-nvmain-hybrid . \
 ### Pull from remote
 
 ```sh
-docker pull ghcr.io/sonodakazuto/gem5-nvmain-docker:l3-cache
+docker pull ghcr.io/sonodakazuto/gem5-nvmain-docker:write-policy
 ```
 
 - **Important**
