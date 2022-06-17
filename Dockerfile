@@ -51,7 +51,7 @@ RUN scons EXTRAS=../NVmain build/X86/gem5.opt -j16 && \
 
 # copy scripts
 COPY /scripts/hybrid-build-test.sh /home/project/gem5
-COPY /scripts/hybrid-build-test-l3.sh /home/project/gem5
+COPY /scripts/l3-cache-test.sh /home/project/gem5
 COPY /benchmark/quicksort.c /home/project/gem5
 RUN gcc -o /home/project/gem5/quicksort /home/project/gem5/quicksort.c -O3
 COPY /scripts/2-way-test.sh /home/project/gem5
