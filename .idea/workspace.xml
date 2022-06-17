@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1730bc12-8695-4425-aa3e-9f2eedabfaba" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +77,8 @@
       <workItem from="1654250796680" duration="48000" />
       <workItem from="1654250954959" duration="86000" />
       <workItem from="1654251464639" duration="338000" />
-      <workItem from="1655401211896" duration="2845000" />
+      <workItem from="1655401211896" duration="2854000" />
+      <workItem from="1655429433143" duration="13000" />
     </task>
     <servers />
   </component>

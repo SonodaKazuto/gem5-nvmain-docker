@@ -72,7 +72,7 @@ class L2Cache(Cache):
     tgts_per_mshr = 12
     write_buffers = 8
 
-class L3Cache(BaseCache):
+class L3Cache(Cache):
     assoc = 64
     hit_latency = 32
     response_latency =32
