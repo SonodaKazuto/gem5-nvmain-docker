@@ -49,6 +49,11 @@ COPY /add-l3-cache/XBar.py /home/project/gem5/src/mem
 RUN scons EXTRAS=../NVmain build/X86/gem5.opt -j16 && \
     echo "gem5 and NVmain hybrid built (adding l3 cache)"
 
+# Write Policy
+COPY /write-policy/base.cc /home/project/gem5/src/mem/cache
+RUN scons EXTRAS=../NVmain build/X86/gem5.opt -j16 && \
+    echo "gem5 and NVmain hybrid built (adding write policy)"
+
 # copy scripts
 COPY /scripts/hybrid-build-test.sh /home/project/gem5
 COPY /scripts/l3-cache-test.sh /home/project/gem5
