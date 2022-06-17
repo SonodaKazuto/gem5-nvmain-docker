@@ -49,5 +49,12 @@ COPY /add-l3-cache/XBar.py /home/project/gem5/src/mem
 RUN scons EXTRAS=../NVmain build/X86/gem5.opt -j16 && \
     echo "gem5 and NVmain hybrid built (adding l3 cache)"
 
+# copy scripts
+COPY /scripts/hybrid-build-test.sh /home/project/gem5
+COPY /scripts/hybrid-build-test-l3.sh /home/project/gem5
+COPY /benchmark/quicksort.c /home/project/gem5
+RUN gcc -o /home/project/gem5/quicksort /home/project/gem5/quicksort.c -O3
+COPY /scripts/2-way-test.sh /home/project/gem5
+COPY /scripts/full-way-test.sh /home/project/gem5
 WORKDIR ..
 #CMD [ 'zsh' ]
