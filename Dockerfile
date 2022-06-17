@@ -47,14 +47,14 @@ COPY /add-l3-cache/Options.py /home/project/gem5/configs/common
 COPY /add-l3-cache/BaseCPU.py /home/project/gem5/src/cpu
 COPY /add-l3-cache/XBar.py /home/project/gem5/src/mem
 COPY /benchmark/quicksort.c /home/project/gem5
-RUN gcc -o /home/project/gem5/quicksort /home/project/gem5/quicksort.c -O3
+RUN gcc --static -o /home/project/gem5/quicksort /home/project/gem5/quicksort.c -O3
 RUN scons EXTRAS=../NVmain build/X86/gem5.opt -j16 && \
     echo "gem5 and NVmain hybrid built (adding l3 cache)"
 
 # Write Policy
 COPY /write-policy/base.cc /home/project/gem5/src/mem/cache
 COPY /benchmark/multiply.c /home/project/gem5
-RUN gcc -o /home/project/gem5/multiply /home/project/gem5/multiply.c -O3
+RUN gcc --static -o /home/project/gem5/multiply /home/project/gem5/multiply.c -O3
 RUN scons EXTRAS=../NVmain build/X86/gem5.opt -j16 && \
     echo "gem5 and NVmain hybrid built (adding write policy)"
 
