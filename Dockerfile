@@ -43,5 +43,3 @@ RUN ./build/X86/gem5.opt configs/example/se.py -c tests/test-progs/hello/bin/x86
 # Copy some scripts
 COPY hybrid-build-test.sh /home/project/gem5
 WORKDIR ..
-#ENTRYPOINT "sh /home/project/start-up.sh"
-CMD ['zsh']
