@@ -63,4 +63,6 @@ COPY /scripts/hybrid-build-test.sh /home/project/gem5
 COPY /scripts/l3-cache-test.sh /home/project/gem5
 COPY /scripts/2-way-test.sh /home/project/gem5
 COPY /scripts/full-way-test.sh /home/project/gem5
+COPY /scripts/2-way-test-write-policy.sh /home/project/gem5
+COPY /scripts/full-way-test-write-policy.sh /home/project/gem5
 WORKDIR ..
