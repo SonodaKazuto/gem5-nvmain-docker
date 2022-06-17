@@ -41,7 +41,7 @@ RUN ./build/X86/gem5.opt configs/example/se.py -c tests/test-progs/hello/bin/x86
     cat /home/project/gem5/m5out/stats.txt
 
 # Copy some scripts
-COPY /scripts/hybrid-build-test.sh /home/project/gem5
+COPY hybrid-build-test.sh /home/project/gem5
 WORKDIR ..
 #ENTRYPOINT "sh /home/project/start-up.sh"
 CMD ['zsh']
