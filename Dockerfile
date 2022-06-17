@@ -46,7 +46,8 @@ COPY /add-l3-cache/Caches.py /home/project/gem5/configs/common
 COPY /add-l3-cache/Options.py /home/project/gem5/configs/common
 COPY /add-l3-cache/BaseCPU.py /home/project/gem5/src/cpu
 COPY /add-l3-cache/XBar.py /home/project/gem5/src/mem
+RUN scons EXTRAS=../NVmain build/X86/gem5.opt -j16 && \
+    echo "gem5 and NVmain hybrid built (adding l3 cache)"
 
-# startup command
 WORKDIR ..
-CMD [ 'zsh' ]
+#CMD [ 'zsh' ]
