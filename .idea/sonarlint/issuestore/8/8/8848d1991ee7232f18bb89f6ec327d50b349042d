@@ -1,0 +1,19 @@
+
+fpython:S1192²"MDefine a constant instead of duplicating this literal "ISA instance" 7 times.(þƒ–ª
+spython:S1192±"UDefine a constant instead of duplicating this literal "Interrupt Controller" 7 times.(øÜ›¦úÿÿÿÿ
+dpython:S22081"GImport only needed names or import the module and then use its members.(¹‰ç›þÿÿÿÿ
+dpython:S22083"GImport only needed names or import the module and then use its members.(ú‰µ·úÿÿÿÿ
+_python:S22084"GImport only needed names or import the module and then use its members.(æ£ è
+_python:S22085"GImport only needed names or import the module and then use its members.(ƒí¼Æ
+_python:S2208="GImport only needed names or import the module and then use its members.(’ÇÐí
+xpython:S117ÿ"[Rename this local variable "_localApic" to match the regular expression ^[_a-z][a-z0-9_]*$.(É‚Žñøÿÿÿÿ
+Lpython:S1481ÿ".Remove the unused local variable "_localApic".(É‚Žñøÿÿÿÿ
+>python:S1481õ"%Remove the unused local variable "i".(Ž¥‘Ç
+Cpython:S1481÷"%Remove the unused local variable "i".(ÞèËÖûÿÿÿÿ
+Cpython:S1481þ"%Remove the unused local variable "i".(ì¦Î øÿÿÿÿ
+>python:S1481"%Remove the unused local variable "i".(±‚õ•
+>python:S1481ƒ"%Remove the unused local variable "i".(´Ì¿æ
+>python:S1481…"%Remove the unused local variable "i".(ºÈõŠ
+Cpython:S1481ˆ"%Remove the unused local variable "i".(½äÅèÿÿÿÿÿ
+Cpython:S1481Ê"%Remove the unused local variable "i".(­Û¶Åûÿÿÿÿ
+wpython:S1186Ò"YAdd a nested comment explaining why this method is empty, or complete the implementation.(ÄÝž÷úÿÿÿÿ

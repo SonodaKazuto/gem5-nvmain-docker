@@ -36,10 +36,7 @@ docker build -t gem5-nvmain-hybrid . \
 ### Pull from remote
 
 ```sh
-docker pull ghcr.io/sonodakazuto/gem5-nvmain-docker:main
-```
-```sh
-docker pull sonodakazuto/gem5-nvmain-hybrid:main
+docker pull ghcr.io/sonodakazuto/gem5-nvmain-docker:l3-cache
 ```
 
 - **Important**

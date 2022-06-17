@@ -1,0 +1,10 @@
+
+dpython:S2208+"GImport only needed names or import the module and then use its members.(äŸ¼®üÿÿÿÿ
+_python:S2208,"GImport only needed names or import the module and then use its members.(©¹ô‰
+ppython:S15422"SRename function "_listCpuTypes" to match the regular expression ^[a-z_][a-z0-9_]*$.(°¡†ÿÿÿÿÿ
+kpython:S15426"SRename function "_listMemTypes" to match the regular expression ^[a-z_][a-z0-9_]*$.(œ´»û
+upython:S1542:"XRename function "_listPlatformTypes" to match the regular expression ^[a-z_][a-z0-9_]*$.(İ”¤ùÿÿÿÿ
+mpython:S1542A"URename function "addNoISAOptions" to match the regular expression ^[a-z_][a-z0-9_]*$.(ªçòÉ
+opython:S1542ƒ"VRename function "addCommonOptions" to match the regular expression ^[a-z_][a-z0-9_]*$.(½ÙÇû
+kpython:S1542¬"RRename function "addSEOptions" to match the regular expression ^[a-z_][a-z0-9_]*$.(äš
+ppython:S1542¼"RRename function "addFSOptions" to match the regular expression ^[a-z_][a-z0-9_]*$.(‘ÊÄùúÿÿÿÿ

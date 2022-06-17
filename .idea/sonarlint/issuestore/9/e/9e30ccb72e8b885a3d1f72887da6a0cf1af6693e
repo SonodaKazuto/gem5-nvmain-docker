@@ -1,0 +1,7 @@
+
+dpython:S2208/"GImport only needed names or import the module and then use its members.(äŸ¼®üÿÿÿÿ
+_python:S22080"GImport only needed names or import the module and then use its members.(¥–ÿé
+upython:S1178"^Rename this local variable "ExternalCache" to match the regular expression ^[_a-z][a-z0-9_]*$.(Éÿ¬½
+lpython:S37762"TRefactor this function to reduce its Cognitive Complexity from 38 to the 15 allowed.(ç×Å±
+Tpython:S5754="<Specify an exception class to catch or reraise the exception(ˆÊÉ·
+spython:S1542È"ZRename function "ExternalCacheFactory" to match the regular expression ^[a-z_][a-z0-9_]*$.(¾ÅÀô
