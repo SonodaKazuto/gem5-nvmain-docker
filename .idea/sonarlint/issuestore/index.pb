@@ -14,12 +14,6 @@ G
 add-l3-cache/Options.py,0/4/045c30d322ea2b920d594313027d5b00e9992e5e
 7
 LICENSE,0/3/0398ccd0f49298b10a3d76a47800d2ebecd49859
-E
-scripts/2-way-test.sh,1/1/11b6f1ca5e75317e3d8be4f58248f0da4d255178
-R
-"scripts/2-way-test-write-policy.sh,2/a/2a6a39e840577dd579d16c9dfa7f6a5891d600a2
-U
-%scripts/full-way-test-write-policy.sh,2/4/245860d61bff39e149bbf7e6ae77d7248a722ee0
 T
 $.github/workflows/docker-publish.yml,5/c/5c5ee4afb3fab2334411b3025d137240676c72c3
 M

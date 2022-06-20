@@ -47,16 +47,40 @@ COPY /add-l3-cache/Options.py /home/project/gem5/configs/common
 COPY /add-l3-cache/BaseCPU.py /home/project/gem5/src/cpu
 COPY /add-l3-cache/XBar.py /home/project/gem5/src/mem
 COPY /benchmark/quicksort.c /home/project/gem5
-RUN gcc --static -o /home/project/gem5/quicksort /home/project/gem5/quicksort.c -O3
+RUN gcc --static -o /home/project/gem5/quicksort /home/project/gem5/quicksort.c
 RUN scons EXTRAS=../NVmain build/X86/gem5.opt -j16 && \
-    echo "gem5 and NVmain hybrid built (adding l3 cache)"
+    echo "gem5 and NVmain hybrid built (adding l3 cache)" && \
+    ./build/X86/gem5.opt configs/example/se.py -c ./quicksort \
+    --cpu-type=TimingSimpleCPU \
+    --caches --l2cache --l3cache --l3_assoc=2 --l1i_size=32kB --l1d_size=32kB --l2_size=128kB --l3_size=1MB \
+    --mem-type=NVMainMemory \
+    --nvmain-config=../NVmain/Config/PCM_ISSCC_2012_4GB.config && \
+    cp m5out/stats.txt ./2-way.txt && \
+    ./build/X86/gem5.opt configs/example/se.py -c ./quicksort \
+    --cpu-type=TimingSimpleCPU \
+    --caches --l2cache --l3cache --l3_assoc=1 --l1i_size=32kB --l1d_size=32kB --l2_size=128kB --l3_size=1MB \
+    --mem-type=NVMainMemory \
+    --nvmain-config=../NVmain/Config/PCM_ISSCC_2012_4GB.config && \
+    cp m5out/stats.txt ./full-way.txt
 
 # Write Policy
 COPY /write-policy/base.cc /home/project/gem5/src/mem/cache
 COPY /benchmark/multiply.c /home/project/gem5
-RUN gcc --static -o /home/project/gem5/multiply /home/project/gem5/multiply.c -O3
+RUN gcc --static -o /home/project/gem5/multiply /home/project/gem5/multiply.c
 RUN scons EXTRAS=../NVmain build/X86/gem5.opt -j16 && \
-    echo "gem5 and NVmain hybrid built (adding write policy)"
+    echo "gem5 and NVmain hybrid built (adding write policy)" && \
+    ./build/X86/gem5.opt configs/example/se.py -c ./multiply \
+    --cpu-type=TimingSimpleCPU \
+    --caches --l2cache --l3cache --l3_assoc=2 --l1i_size=32kB --l1d_size=32kB --l2_size=128kB --l3_size=1MB \
+    --mem-type=NVMainMemory \
+    --nvmain-config=../NVmain/Config/PCM_ISSCC_2012_4GB.config && \
+    cp m5out/stats.txt ./2-way-write-policy.txt && \
+    ./build/X86/gem5.opt configs/example/se.py -c ./multiply \
+    --cpu-type=TimingSimpleCPU \
+    --caches --l2cache --l3cache --l3_assoc=1 --l1i_size=32kB --l1d_size=32kB --l2_size=128kB --l3_size=1MB \
+    --mem-type=NVMainMemory \
+    --nvmain-config=../NVmain/Config/PCM_ISSCC_2012_4GB.config && \
+    cp m5out/stats.txt ./full-way-write-policy.txt
 
 # copy scripts
 COPY /scripts/hybrid-build-test.sh /home/project/gem5
