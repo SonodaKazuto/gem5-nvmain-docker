@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1730bc12-8695-4425-aa3e-9f2eedabfaba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/add-l3-cache/Caches.py" beforeDir="false" afterPath="$PROJECT_DIR$/add-l3-cache/Caches.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/045c30d322ea2b920d594313027d5b00e9992e5e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/8848d1991ee7232f18bb89f6ec327d50b349042d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/e/9e30ccb72e8b885a3d1f72887da6a0cf1af6693e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/c/ac28af23ffd7c7d8ede3f1406f81655b18bc1a84" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add-l3-cache/BaseCPU.py" beforeDir="false" afterPath="$PROJECT_DIR$/add-l3-cache/BaseCPU.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +94,8 @@
       <workItem from="1655488783831" duration="620000" />
       <workItem from="1655490848857" duration="636000" />
       <workItem from="1655568490005" duration="133000" />
+      <workItem from="1655699678085" duration="271000" />
+      <workItem from="1655702128524" duration="1511000" />
     </task>
     <servers />
   </component>
