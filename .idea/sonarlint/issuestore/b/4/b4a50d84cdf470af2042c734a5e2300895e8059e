@@ -1,0 +1,4 @@
+
+dpython:S2208*"GImport only needed names or import the module and then use its members.(äŸ¼®üÿÿÿÿ
+python:S101:"cRename class "L1_ICache" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.(»”„çûÿÿÿÿ
+ypython:S101?"cRename class "L1_DCache" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.(ê—¨

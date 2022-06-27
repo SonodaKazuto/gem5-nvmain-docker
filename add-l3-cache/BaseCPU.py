@@ -320,7 +320,7 @@ class BaseCPU(MemObject):
         self.toL3Bus = L3XBar()
         self.connectCachedPorts(self.toL3Bus)
         self.l3cache = l3c
-        self.toL2Bus.master = self.l3cache.cpu_side
+        self.toLˇBus.master = self.l3cache.cpu_side
         self._cached_ports = ['l3cache.mem_side']
 
     def createThreads(self):
